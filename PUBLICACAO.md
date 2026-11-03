@@ -21,10 +21,9 @@ As fontes licenciadas nunca entram: cada pessoa as baixa do SharePoint e as inst
 
 ## Configuração no Cloudflare (feita em 02/11/2026)
 
-O projeto Pages se chama `panfleto` e fica na conta rafaelaugustscherer@gmail.com. O endereço padrão é https://panfleto-3y8.pages.dev/natura/. O app do GitHub "Cloudflare Workers and Pages" tem acesso só ao repositório `panfleto`.
+O projeto Pages se chama `panfleto`, e o endereço padrão é https://panfleto-3y8.pages.dev/natura/. O GitHub está ligado pelo app "Cloudflare Workers and Pages".
 
 Passos usados, para refazer se preciso:
-
 
 1. **Workers & Pages → Create → Pages → Connect to Git.** Escolher o repositório `panfleto`.
 2. Preencher assim:
