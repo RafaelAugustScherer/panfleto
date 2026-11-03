@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tipografia das ofertas</title>
+<link rel="stylesheet" href="css/app.css">
+<style>
+  body { overflow: auto; }
+  .pg { display: grid; grid-template-rows: auto 1fr; min-height: 100vh; }
+  .pg-topo { display: flex; align-items: center; gap: 14px; padding: 10px 16px; background: var(--panel); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 2; }
+  .pg-topo h1 { font-size: 14px; margin: 0; font-weight: 600; }
+  .pg-topo .grow { flex: 1; }
+  .pg-variacoes { display: grid; gap: 14px; padding: 14px 16px; grid-template-columns: repeat(var(--n), minmax(320px, 520px)); align-items: start; }
+  .pg-var { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+  .pg-var.em-uso { border-color: var(--ok); }
+  .pg-var header { display: flex; align-items: center; gap: 8px; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  .pg-var header b { font-size: 13px; }
+  .pg-var header .grow { flex: 1; }
+  .pg-var .tag-uso { color: var(--ok); font-size: 11px; }
+  .pg-previa { background: #fff; }
+  .pg-previa canvas { display: block; width: 100%; height: auto; }
+  .pg-previa.zoom { max-height: 62vh; overflow: auto; }
+  .pg-previa.zoom canvas { width: calc(var(--zoom) * var(--w)); max-width: none; }
+  .pg-ctrl { padding: 8px 10px 12px; display: grid; gap: 10px; }
+  .pg-sec h3 { margin: 0 0 4px; font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--fg-faint); }
+  .pg-lin { display: grid; grid-template-columns: 96px 1fr 1fr; gap: 6px; align-items: center; margin-bottom: 4px; font-size: 12px; }
+  .pg-lin.c2 { grid-template-columns: 96px 1fr; }
+  .pg-lin label { color: var(--fg-dim); }
+  .pg-lin input, .pg-lin select { width: 100%; min-width: 0; }
+  .pg-msg { padding: 40px; text-align: center; color: var(--fg-dim); }
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script src="vendor/konva.min.js"></script>
+<script src="vendor/htm-preact.umd.js"></script>
+<script src="js/util.js"></script>
+<script src="js/normalizar.js"></script>
+<script src="js/arquivos.js"></script>
+<script src="js/fontes.js"></script>
+<script src="js/tipografia.js"></script>
+<script src="js/imagens.js"></script>
+<script src="js/modelo.js"></script>
+<script src="js/artes.js"></script>
+<script src="js/estado.js"></script>
+<script src="js/componentes.js"></script>
+<script src="js/cena.js"></script>
+<script src="js/playground.js"></script>
+</body>
+</html>

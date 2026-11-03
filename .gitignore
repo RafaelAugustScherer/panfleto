@@ -1,0 +1,12 @@
+# Repositório público: só entra o que está liberado abaixo. PSDs, pastas de campanha, fontes
+# (licenciadas) e configurações locais ficam de fora.
+/*
+!/.gitignore
+!/README.md
+!/ESPECIFICACAO.md
+!/PUBLICACAO.md
+!/_redirects
+!/servidor.py
+!/Abrir editor (servidor local).bat
+!/natura/
+!/functions/
