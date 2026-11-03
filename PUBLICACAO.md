@@ -19,7 +19,12 @@ O site e o repositório são **públicos** (decisão de 02/11/2026). Por isso, q
 
 As fontes licenciadas nunca entram: cada pessoa as baixa do SharePoint e as instala na própria pasta de trabalho.
 
-## Configuração no Cloudflare (feita uma vez)
+## Configuração no Cloudflare (feita em 02/11/2026)
+
+O projeto Pages se chama `panfleto` e fica na conta rafaelaugustscherer@gmail.com. O endereço padrão é https://panfleto-3y8.pages.dev/natura/. O app do GitHub "Cloudflare Workers and Pages" tem acesso só ao repositório `panfleto`.
+
+Passos usados, para refazer se preciso:
+
 
 1. **Workers & Pages → Create → Pages → Connect to Git.** Escolher o repositório `panfleto`.
 2. Preencher assim:
@@ -28,8 +33,8 @@ As fontes licenciadas nunca entram: cada pessoa as baixa do SharePoint e as inst
    - Build command: vazio
    - Build output directory: `/`
    - Root directory: vazio
-3. Esperar o primeiro deploy e conferir o endereço `panfleto-xxx.pages.dev/natura/`.
-4. **Custom domains → Set up a custom domain** com `panfleto.estrutura.dev`. Com a zona `estrutura.dev` no Cloudflare, o registro DNS é criado sozinho. Se ela estiver em outro provedor, crie um CNAME de `panfleto` para `panfleto-xxx.pages.dev`.
+3. Esperar o primeiro deploy e conferir o endereço `panfleto-3y8.pages.dev/natura/`.
+4. **Custom domains → Set up a custom domain** com `panfleto.estrutura.dev`. A zona `estrutura.dev` está na mesma conta, então o Cloudflare criou sozinho o CNAME `panfleto` → `panfleto-3y8.pages.dev`.
 
 ## Atualizar
 
